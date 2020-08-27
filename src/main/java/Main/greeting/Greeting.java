@@ -12,7 +12,7 @@ public class Greeting {
     }
     public Greeting(){
         this.id = new Random().nextLong();
-        this.content = "Дефолтный контент, т.к. ничего не передаем";
+        this.content = "Привет. Тестовый рест отработал и вернул эту строку";
 
     }
 

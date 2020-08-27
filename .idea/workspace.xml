@@ -22,14 +22,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a49d3afc-d18b-45b2-9480-fbeb0919cff7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main/greeting/Greeting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main/greeting/Greeting.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main/greeting/GreetingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main/greeting/GreetingController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Main/greeting/Greeting.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main/greeting/Greeting.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Main/greeting/GreetingController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main/greeting/GreetingController.class" afterDir="false" />
-    </list>
+    <list default="true" id="a49d3afc-d18b-45b2-9480-fbeb0919cff7" name="Default Changelist" comment="добавлена зависимость для парсинга" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -148,7 +141,14 @@
       <option name="project" value="LOCAL" />
       <updated>1598246886938</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="добавлена зависимость для парсинга">
+      <created>1598527331859</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1598527331859</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -186,22 +186,22 @@
       <screen x="0" y="23" width="1680" height="940" />
     </state>
     <state x="242" y="98" key="CommitChangelistDialog2/0.23.1680.940@0.23.1680.940" timestamp="1598246886791" />
-    <state width="1175" height="421" key="GridCell.Tab.0.bottom" timestamp="1598523687030">
+    <state width="1358" height="238" key="GridCell.Tab.0.bottom" timestamp="1598527447122">
       <screen x="0" y="23" width="1680" height="940" />
     </state>
-    <state width="1175" height="421" key="GridCell.Tab.0.bottom/0.23.1680.940@0.23.1680.940" timestamp="1598523687030" />
-    <state width="1175" height="421" key="GridCell.Tab.0.center" timestamp="1598523687029">
+    <state width="1358" height="238" key="GridCell.Tab.0.bottom/0.23.1680.940@0.23.1680.940" timestamp="1598527447122" />
+    <state width="1358" height="238" key="GridCell.Tab.0.center" timestamp="1598527447121">
       <screen x="0" y="23" width="1680" height="940" />
     </state>
-    <state width="1175" height="421" key="GridCell.Tab.0.center/0.23.1680.940@0.23.1680.940" timestamp="1598523687029" />
-    <state width="1175" height="421" key="GridCell.Tab.0.left" timestamp="1598523687029">
+    <state width="1358" height="238" key="GridCell.Tab.0.center/0.23.1680.940@0.23.1680.940" timestamp="1598527447121" />
+    <state width="1358" height="238" key="GridCell.Tab.0.left" timestamp="1598527447121">
       <screen x="0" y="23" width="1680" height="940" />
     </state>
-    <state width="1175" height="421" key="GridCell.Tab.0.left/0.23.1680.940@0.23.1680.940" timestamp="1598523687029" />
-    <state width="1175" height="421" key="GridCell.Tab.0.right" timestamp="1598523687029">
+    <state width="1358" height="238" key="GridCell.Tab.0.left/0.23.1680.940@0.23.1680.940" timestamp="1598527447121" />
+    <state width="1358" height="238" key="GridCell.Tab.0.right" timestamp="1598527447122">
       <screen x="0" y="23" width="1680" height="940" />
     </state>
-    <state width="1175" height="421" key="GridCell.Tab.0.right/0.23.1680.940@0.23.1680.940" timestamp="1598523687029" />
+    <state width="1358" height="238" key="GridCell.Tab.0.right/0.23.1680.940@0.23.1680.940" timestamp="1598527447122" />
     <state width="1175" height="421" key="GridCell.Tab.1.bottom" timestamp="1598523687031">
       <screen x="0" y="23" width="1680" height="940" />
     </state>
@@ -242,14 +242,18 @@
       <screen x="0" y="23" width="1680" height="940" />
     </state>
     <state x="236" y="76" key="SettingsEditor/0.23.1680.940@0.23.1680.940" timestamp="1597647328397" />
-    <state x="250" y="221" key="Vcs.Push.Dialog.v2" timestamp="1598246888478">
+    <state x="250" y="221" key="Vcs.Push.Dialog.v2" timestamp="1598527333694">
       <screen x="0" y="23" width="1680" height="940" />
     </state>
-    <state x="250" y="221" key="Vcs.Push.Dialog.v2/0.23.1680.940@0.23.1680.940" timestamp="1598246888478" />
+    <state x="250" y="221" key="Vcs.Push.Dialog.v2/0.23.1680.940@0.23.1680.940" timestamp="1598527333694" />
     <state x="405" y="327" key="com.intellij.ide.util.TipDialog" timestamp="1598522263552">
       <screen x="0" y="23" width="1680" height="940" />
     </state>
     <state x="405" y="327" key="com.intellij.ide.util.TipDialog/0.23.1680.940@0.23.1680.940" timestamp="1598522263552" />
+    <state x="522" y="394" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1598527425637">
+      <screen x="0" y="23" width="1680" height="940" />
+    </state>
+    <state x="522" y="394" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1680.940@0.23.1680.940" timestamp="1598527425637" />
     <state x="314" y="257" width="731" height="472" key="find.popup" timestamp="1598523353698">
       <screen x="0" y="23" width="1680" height="940" />
     </state>

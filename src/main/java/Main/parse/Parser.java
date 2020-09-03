@@ -8,8 +8,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
-import static Main.parse.ParserConstantsFFF.TEST_URL;
-
 public class Parser {
         String url;
         String userAgent;
@@ -30,7 +28,7 @@ public class Parser {
         }
 
         public Parser() throws IOException{
-            document = getDocument();
+            //document = getDocument();
         }
 
         public List getList(){
@@ -67,9 +65,6 @@ public class Parser {
         }
         private Document getDocument(String url) throws IOException{
             return Jsoup.connect(url).get();
-        }
-        private Document getDocument() throws IOException{
-            return Jsoup.connect(TEST_URL).get();
         }
 
 

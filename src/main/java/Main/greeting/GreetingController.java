@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 @CrossOrigin
 @RestController
 public class GreetingController {
-    @RequestMapping("/greeting")
+    @RequestMapping("/testConnect")
     public Greeting greeting(@RequestParam(value = "name", required=false, defaultValue = "World") String name){
         return new Greeting();
     }

@@ -12,8 +12,9 @@ import java.util.List;
 @RestController
 @CrossOrigin
 public class ParserController {
-    @RequestMapping("/parser")
-    public List parser(@RequestParam(value = "url", required=false, defaultValue = "World") String url, String userAgent, String referrer){
+    @RequestMapping("/parse")
+    public List parser(@RequestParam(value = "url", required=false, defaultValue = "https://spring-projects.ru/guides/serving-web-content/")
+                                   String url, String userAgent, String referrer, ParserParams params){
         try {
             Parser parser = new Parser();
             return parser.getList();

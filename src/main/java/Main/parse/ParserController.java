@@ -15,6 +15,7 @@ public class ParserController {
     @RequestMapping("/parse")
     public List parser(@RequestParam(value = "url", required=false, defaultValue = "https://spring-projects.ru/guides/serving-web-content/")
                                    String url, String userAgent, String referrer, ParserParams params){
+
         try {
             Parser parser = new Parser();
             return parser.getList();

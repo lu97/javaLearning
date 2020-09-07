@@ -10,23 +10,12 @@ import java.util.Map;
 
 public class Parser {
         String url;
-        String userAgent;
-        String referrer;
         Document document;
+        InputObject parseData;
 
-
-        public Parser(String url, String userAgent, String referrer) throws IOException {
-            setUrl(url);
-            setUserAgent(userAgent);
-            setReferrer(referrer);
-            document = getDocument(url, userAgent, referrer);
+        public Parser(InputObject inputObject) throws IOException{
+            //document = getDocument();
         }
-
-        public Parser(String url) throws IOException{
-            setUrl(url);
-            document = getDocument(url);
-        }
-
         public Parser() throws IOException{
             //document = getDocument();
         }
@@ -34,30 +23,17 @@ public class Parser {
         public List getList(){
             List result  = new ArrayList();
             Elements list = document.select("");
-
             return result;
         }
-
-
-
-
+        public InputObject getParseData() { return parseData; }
+        public void setParseData(InputObject parseData) {
+            this.parseData = parseData;
+        }
         public String getUrl() {
             return url;
         }
         public void setUrl(String url) {
             this.url = url;
-        }
-        public String getUserAgent() {
-            return userAgent;
-        }
-        public void setUserAgent(String userAgent) {
-            this.userAgent = userAgent;
-        }
-        public String getReferrer() {
-            return referrer;
-        }
-        public void setReferrer(String referrer) {
-            this.referrer = referrer;
         }
 
         private Document getDocument(String url, String userAgent, String referrer) throws IOException{
@@ -67,5 +43,70 @@ public class Parser {
             return Jsoup.connect(url).get();
         }
 
+    protected class InputObject {
+           String url;
+           String selectType;
+           String dataFormat;
+           String tag;
+           Count count;
+           String countType;
 
+        public InputObject(String url, String selectType, String dataFormat, String tag, Count count, String countType) {
+            this.url = url;
+            this.selectType = selectType;
+            this.dataFormat = dataFormat;
+            this.tag = tag;
+            this.count = count;
+            this.countType = countType;
+        }
+
+        public String getUrl() {
+            return url;
+        }
+
+        public String getSelectType() {
+            return selectType;
+        }
+
+        public String getDataFormat() {
+            return dataFormat;
+        }
+
+        public String getTag() {
+            return tag;
+        }
+
+        public Count getCount() {
+            return count;
+        }
+
+        public String getCountType() {
+            return countType;
+        }
+    }
+    protected class Count{
+        Integer start;
+        Integer end;
+
+        public Count(Integer start, Integer end) {
+            this.start = start;
+            this.end = end;
+        }
+
+        public Integer getStart() {
+            return start;
+        }
+
+        public void setStart(Integer start) {
+            this.start = start;
+        }
+
+        public Integer getEnd() {
+            return end;
+        }
+
+        public void setEnd(Integer end) {
+            this.end = end;
+        }
+    }
 }
